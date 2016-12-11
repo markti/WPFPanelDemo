@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseZodiac", "ChineseZodiac\ChineseZodiac.csproj", "{AAEB5E76-601D-45EA-A944-A06A51A8380F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunPanels", "FunPanels\FunPanels.csproj", "{D68FC963-7F50-4533-96AF-BDCAC9ADD08D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLB", "MLB\MLB.csproj", "{4DEEAFDF-862B-48F9-BDB2-BED965736576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAEB5E76-601D-45EA-A944-A06A51A8380F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEB5E76-601D-45EA-A944-A06A51A8380F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEB5E76-601D-45EA-A944-A06A51A8380F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEB5E76-601D-45EA-A944-A06A51A8380F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68FC963-7F50-4533-96AF-BDCAC9ADD08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68FC963-7F50-4533-96AF-BDCAC9ADD08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68FC963-7F50-4533-96AF-BDCAC9ADD08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68FC963-7F50-4533-96AF-BDCAC9ADD08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DEEAFDF-862B-48F9-BDB2-BED965736576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEEAFDF-862B-48F9-BDB2-BED965736576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEEAFDF-862B-48F9-BDB2-BED965736576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEEAFDF-862B-48F9-BDB2-BED965736576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

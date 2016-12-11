@@ -1,0 +1,169 @@
+﻿<s:SurfaceWindow x:Class="MLB.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:s="http://schemas.microsoft.com/surface/2008"
+        xmlns:converter="clr-namespace:MLB.Converters"
+        xmlns:control="clr-namespace:FunPanels;assembly=FunPanels"
+        Title="Window1" 
+        Height="768" Width="1024" Background="Black" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    <s:SurfaceWindow.Resources>
+        <converter:StringToColorConverter x:Key="stringToColor" />
+        <Storyboard x:Key="Storyboard1">
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+        		<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+        		<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard2">
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+        		<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.1"/>
+        		<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+        		<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.1"/>
+        		<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+        		<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+        		<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </s:SurfaceWindow.Resources>
+	<s:SurfaceWindow.Triggers>
+		<!--<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+			<BeginStoryboard Storyboard="{StaticResource Storyboard2}"/>
+		</EventTrigger>-->
+	</s:SurfaceWindow.Triggers>
+	<Grid>
+		<s:SurfaceItemsControl x:Name="teamList" ItemsSource="{Binding Path=Teams}" Margin="0">
+			<s:SurfaceItemsControl.Template>
+				<ControlTemplate>
+					<ControlTemplate.Resources>
+						<Storyboard x:Key="Storyboard1">
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="circleRowPanel" Storyboard.TargetProperty="(control:CirclePanel.Radius)">
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="900"/>
+							</DoubleAnimationUsingKeyFrames>
+						</Storyboard>
+						<Storyboard x:Key="Storyboard2">
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="circleRowPanel" Storyboard.TargetProperty="(control:CirclePanel.Radius)">
+								<SplineDoubleKeyFrame KeyTime="00:00:01" Value="200"/>
+							</DoubleAnimationUsingKeyFrames>
+						</Storyboard>
+					</ControlTemplate.Resources>
+					<Grid Margin="0">
+						<control:CircleRowPanel AllowItemRotation="True" Radius="200" x:Name="circleRowPanel" IsItemsHost="True" />
+					</Grid>
+				</ControlTemplate>
+			</s:SurfaceItemsControl.Template>
+			<s:SurfaceItemsControl.ItemTemplate>
+				<DataTemplate>
+                    <Grid>
+					    <Grid Width="150" Height="150" MouseUp="Grid_MouseUp" s:Contacts.ContactUp="Grid_ContactUp">
+						    <Ellipse Stroke="#FF000000">
+							    <Ellipse.Fill>
+								    <LinearGradientBrush EndPoint="0.859,0.937" StartPoint="0.14,0.127">
+									    <GradientStop Color="#FF434343" Offset="0"/>
+									    <GradientStop Color="#FF222222" Offset="0.987"/>
+								    </LinearGradientBrush>
+							    </Ellipse.Fill>
+						    </Ellipse>
+						    <Ellipse Margin="10,10,10,10" Stroke="#FF000000">
+							    <Ellipse.Fill>
+								    <SolidColorBrush Color="{Binding Path=ColorCode, Converter={StaticResource stringToColor}}" />
+							    </Ellipse.Fill>
+						    </Ellipse>
+						    <Image Source="{Binding Path=InsigniaImagePath}" Margin="30" />
+						    <Ellipse Margin="10,10,10,10">
+							    <Ellipse.Fill>
+								    <LinearGradientBrush EndPoint="0.859,0.937" StartPoint="0.14,0.127">
+									    <GradientStop Color="#3FFFFFFF" Offset="0"/>
+									    <GradientStop Color="#00FFFFFF" Offset="0.987"/>
+								    </LinearGradientBrush>
+							    </Ellipse.Fill>
+						    </Ellipse>
+					    </Grid>
+                    </Grid>
+                </DataTemplate>
+			</s:SurfaceItemsControl.ItemTemplate>
+		</s:SurfaceItemsControl>
+        <ItemsControl x:Name="infoList" ItemsSource="{Binding Path=InfoList}">
+            <ItemsControl.Template>
+                <ControlTemplate>
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="Storyboard1">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="infoPanel" Storyboard.TargetProperty="(control:CirclePanel.Radius)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="900"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="Storyboard2">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="infoPanel" Storyboard.TargetProperty="(control:CirclePanel.Radius)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="175"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid>
+                        <control:CircleRowPanel Radius="900" x:Name="infoPanel" IsItemsHost="True" />
+                    </Grid>
+                </ControlTemplate>
+            </ItemsControl.Template>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Width="125" Height="125">
+                        <Grid Width="Auto" Height="Auto" MouseUp="Grid_MouseUp_1" s:Contacts.ContactUp="Grid_ContactUp_1">
+                            <Image Source="{Binding Path=ImagePath}" Margin="30" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:Name="playerList" ItemsSource="{Binding Path=InjuredPlayers}">
+            <ItemsControl.Template>
+                <ControlTemplate>
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="Storyboard1">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="playerPanel" Storyboard.TargetProperty="(control:CirclePanel.Radius)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="900"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="Storyboard2">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="playerPanel" Storyboard.TargetProperty="(control:CirclePanel.Radius)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="275"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid>
+                        <control:CircleRowPanel Radius="900" x:Name="playerPanel" IsItemsHost="True" />
+                    </Grid>
+                </ControlTemplate>
+            </ItemsControl.Template>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Width="125" Height="125">
+                        <Grid Width="Auto" Height="Auto">
+                            <Image Source="{Binding Path=ImagePath}" Margin="30" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <Grid Width="300" Height="300" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Image Margin="16,24,40,16" Source="{Binding SelectedTeam.LogoImagePath}" RenderTransformOrigin="0.5,0.5" x:Name="image" >
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="0" ScaleY="0"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="0"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Grid>
+	</Grid>
+</s:SurfaceWindow>

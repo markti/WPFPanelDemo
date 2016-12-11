@@ -1,0 +1,553 @@
+﻿<UserControl x:Class="MLB.Logos.Yankees"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+	<UserControl.Resources>
+		<VisualBrush x:Key="NYY" Visual="{Binding ElementName=canvas}"/>
+		<DrawingBrush x:Key="NYYd" Viewbox="0,0,0,0" ViewboxUnits="Absolute">
+			<DrawingBrush.Drawing>
+				<DrawingGroup>
+					<GeometryDrawing Brush="#FFFFFFFF" Geometry="F1M107.84,292.78C105.4,297.59 97.96,311.28 98.35,313.3 98.83,315.81 100.41,317.73 100.33,320.27 100.28,321.84 98.35,325.71 96.84,326.79 95.58,327.7 91.78,334.84 76.76,327.76L74.75,326.7C60.22,318.66 63.77,311.4 63.77,309.85 63.77,307.99 65.77,304.16 67.02,303.2 69.03,301.66 71.51,301.81 73.82,300.73 75.69,299.85 81.33,288.52 83.81,283.72L83.85,283.62C34.36,259.31 0.3,208.42 0.3,149.56 0.3,67.12 67.13,0.29 149.56,0.29 232,0.29 298.83,67.12 298.83,149.56 298.83,231.99 232,298.82 149.56,298.82 135.02,298.82 120.96,296.74 107.67,292.86L107.84,292.78z">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFFFFFF" DashCap="Flat" EndLineCap="Flat" LineJoin="Miter" MiterLimit="4" StartLineCap="Flat" Thickness="0.59">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M199.4,93.28C201.92,94.85,204.66,96.32,206.75,98.19L230.72,67.67C235.63,71.96,239.54,76.09,243.37,82.11L215.39,106.67C217.65,109.24,220.56,114.34,222.38,117.88L251.13,97.98C251.68,99.05,253.25,105.61,253,107.53L224.78,125.77C225.23,127.81 225.55,128.25 225.88,130.95 225.88,130.95 258.35,112.53 258.37,112.3 254.83,77.43 224.51,49 188.71,49 173.84,49 160.06,53.7 148.78,61.68 148.59,61.82 150.65,94.36 150.65,94.36 152.94,92.93 155.78,91.59 156.92,91.21L156.35,61.54C159.12,59.34,162.89,57.53,165.8,56.48L165.13,88.63C169.14,87.68,176.29,87.11,178.58,87.59L184.4,52.56C191.47,51.9,198.52,52.66,204.73,54.67L191.18,89.88C193.86,90.7,196.76,91.93,199.4,93.28"/>
+					<GeometryDrawing Geometry="F1M175.66,188.71C203.68,188.71 226.4,165.99 226.4,137.97 226.4,109.94 203.68,87.23 175.66,87.23 147.64,87.23 124.92,109.94 124.92,137.97 124.92,165.99 147.64,188.71 175.66,188.71z">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFFFFFF" DashCap="Flat" EndLineCap="Flat" LineJoin="Miter" MiterLimit="4" StartLineCap="Flat" Thickness="2.2">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M133.92,202.95C132.51,205.28 121.65,211.74 119.31,208.1 115.4,202.03 127.35,192.39 125.09,189.69 123.73,188.07 118.12,192.29 113.53,197.57 113.53,197.57 110.99,202.45 107.52,208.6L99.36,208.67C98.86,208.29 109.74,192.37 107.63,190.52 104.63,187.9 87.03,216.34 78.76,210.3 78.07,209.79 76.2,207.68 78.69,202.36 74.99,207.25 65.99,211.2 62.2,207.92 54.08,200.88 76.14,177.25 85.04,185.44 85.73,186.08 85.99,186.7 85.93,187.19L87.13,185.31 95.17,185.24C91.52,195.08 83.94,203.99 85.88,205.38 89.27,207.82 108.72,178 115.34,184.49 117.4,186.51 117.26,189.16 116.72,190.6 121.41,185.71 131.32,180.99 134.52,184.32 138.42,188.35 126.56,200.28 129.17,201.95 130.65,202.89 135.21,199.41 135.21,199.41 M68.28,202.91C72.64,207.75 85.83,192.44 83.14,188.11 79.57,183.62 64.38,198.58 68.28,202.91z"/>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M156.67,193.85C164.06,194.44 172.62,189.95 171.04,186.44 170.11,184.36 164.52,185.18 161.23,186.53L156.67,193.85 M180.76,200.02C172.67,207.36 163.97,210.11 161.1,207.92 156.32,204.26 160.68,199.52 158.25,197.47 157.58,196.91 156.47,196.77 154.66,196.9L164.06,182.31C169.1,179.73 177.34,178.34 178.73,183.06 180.66,189.65 171.45,195.36 165.07,196.42 169.93,197.31 165.12,202.71 170.1,203.36 172.31,203.66 178.76,199.04 182.14,194.38"/>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M214.47,197.39C201.88,206.43 185.29,209.26 181.77,201.55 175.95,188.84 208.2,172.9 212.02,182.64 214.72,189.55 201.88,195.74 191.3,195.84 190.86,195.84 191.01,195.73 190.97,195.84 190.05,198.52 191.36,201.46 196.32,201.42 201.28,201.37 208.64,199.32 215.64,193.08 M191.72,193.3C198.11,192.47 204.51,187.14 203.44,184.7 201.93,181.29 193.1,187.44 191.72,193.3z"/>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M259.14,187.49C254.99,191.72 249.04,194.73 248.29,195.31 236.55,204.35 219.14,207.68 215.27,200.14 208.68,187.32 241.54,172.61 244.09,181.57 245.94,188.09 234.5,193.67 224.8,194.42 224.36,194.46 224.51,194.31 224.47,194.43 223.55,197.11 224.86,200.05 229.82,200 234.78,199.95 240.15,197.61 247.5,193.11 249.14,192.1 256.05,188.29 259.43,183.63 M225.11,191.67C232.38,191.38 238.92,185.57 237.04,182.96 234.71,179.69 225.62,187.14 225.11,191.67z"/>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M253.88,191.07C254.42,196.74 248.8,196.9 248.52,196.63 247.66,197.58 248.32,201.67 252.65,201.88 259.85,202.24 259.75,192.78 258.79,189.26 258.14,186.85 258.62,184.21 259,181.9 259.95,176.1 267.46,170.06 270.13,171.95 271.94,173.25 270.94,177.57 266.03,181.81 265.11,182.7 264.51,182.85 265.84,185.59 267.29,188.57 269.76,195.73 265.72,201.19 262.57,205.47 257.16,206.04 252.67,205.28 249.8,204.79 246.59,202.89 245.26,200.73 239.5,191.42 251.4,185.03 253.88,191.07z"/>
+					<GeometryDrawing Brush="#FF0C2D82" Geometry="F1M176.8,163.38C177.88,161.88 178.9,160.48 179.89,159.15 180.13,158.84 180.77,157.75 181.09,156.94 182.82,152.49 178.46,145.69 172.33,142.8 166.23,139.92 159.7,140.53 157.74,143.43 157.25,144.15 156.66,145.08 156.55,145.46 155.87,147.68 155.1,149.88 154.27,152.27 144.61,145.81 138.93,138.88 141.56,133.87 146.43,124.58 161.65,126.15 177.54,133.95 193.43,141.76 204.18,153.6 199.69,162.13 197.03,167.2 187.92,167.09 176.8,163.38z"/>
+					<GeometryDrawing Brush="#FF0C2D82" Geometry="F1M195.86,182.29C195.04,182.59 193.03,183.67 191.47,184.66 188.32,181.07 177.24,173.4 171.32,171.35 171.23,171.32 172.82,169.23 172.82,169.23 178.93,171.71 193.47,180.15 195.76,182.25"/>
+					<GeometryDrawing Brush="#FF0C2D82" Geometry="F1M224.68,183.47C226,182.53 229.59,181.07 229.69,180.94 229.81,180.45 229.88,179.48 229.88,179.48 233.69,161.54 225.91,146.94 219.81,141.21 213.85,135.62 216.69,139.8 218.66,142.36 220.07,144.17 220.74,145.24 221.34,146.36 224.44,152.25 222.97,151.52 218.86,147.32 210.74,139.03 196.62,128.52 183.65,122.03 165.93,113.17 144.23,108.96 132.21,109.34 137.17,107.05 139.9,106.8 145,106.29 149.52,105.83 147.75,104.93 145,105.14 135.34,105.88 113.82,106.22 110.46,123.08 107.6,137.4 119.23,149.61 130.49,154 140.28,157.81 150.63,162.36 150.63,162.36L151.68,159.15C145.95,156.09 135.97,152.81 130.69,150.75 123.81,148.08 111.51,138.62 113.13,125.75 115.8,104.4 155.93,111.43 182.59,124.8 194.14,130.59 209.61,141.83 217.21,149.16 225.92,157.56 227.44,160.38 228.01,169.27 228.04,174.7 226.53,179.6 224.68,183.47"/>
+					<GeometryDrawing Geometry="F1M228.2,62.01C230.88,58.57,237.71,49.78,240.23,47.89">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M228.97,46.36L234.31,53.99 244.23,57.43">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M223.24,51.7L230.5,58.96 238.51,62.77">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M292.1,149.04C292.1,70.22 228.2,6.32 149.39,6.32 79.16,6.32 20.79,57.04 8.89,123.84L22.73,109.17C39.9,55.7 90.03,17.01 149.19,17.01 222.53,17.01 281.98,76.46 281.98,149.8L282.06,149.9C281.2,174.71,276.34,185.35,267.45,191.76L266.66,198.27C270.56,195.27 282.38,182.77 289.71,167.67 291.7,163.56 292.25,152.95 292.19,149.28L292.1,149.04z"/>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M274.87,193.73C256.84,245.68 207.47,281.04 149.39,281.55 80.02,282.15 17.19,223.57 17.19,150.23L17.19,150.23C16.15,135.41 20.44,125.91 23.94,119.48 27.53,112.85 35.19,104.12 41.98,105.45 52.5,107.51 45.74,121.25 36.8,136.83 28.07,152.05 17.49,168.05 26,177.25 32.89,184.7 47,183.01 55.63,174.44L29.01,224.42 40.83,224.51 92.24,127.47 80.33,127.8 59.31,166.91C52.54,173.26 41.53,179.08 35.24,174.74 22.75,166.12 71.65,119.42 53.66,104.24 39.29,92.11 23.68,110.21 18.73,118.8 14.67,125.83 7.03,136.66 6.85,149.99L6.86,149.42C6.86,228.23 70.76,292.13 149.57,292.13 216.78,292.13 273.13,245.68 288.28,183.14 288.86,180.84 289.47,178.04 289.47,178.04 285.46,184.35 274.87,193.73 274.87,193.73z"/>
+					<GeometryDrawing Geometry="M73.23,76.13L85.26,74.41">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M52.63,55.16C81.3,78.06 99.67,113.31 99.67,152.86 99.67,163.56 98.45,172.69 95.95,182.63">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M84.81,212.41C78.44,224.22 70.19,234.84 60.39,243.84 55.81,248.04 57.21,245.62 57.21,245.62">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M66.38,54.38L56.07,58.2 52.63,68.7">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M62.17,63.17L71.34,59.73">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M65.23,66.6L74.77,63.54">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M69.05,71.18L81.26,69.27">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M79.73,84.35L92.9,83.2">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M76.49,101.52L84.5,93.13 97.86,92.75">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M80.11,109.73L88.51,101.52 101.3,102.29">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M57.02,73.09L61.22,63.17">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M61.98,78.05L66.18,67.75">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M64.66,82.25L70,72.14">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M68.28,87.02L74.39,77.86">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M71.91,92.56L78.78,85.11">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M83.74,120.61L92.52,111.83 106.26,112.97">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M95.96,122.33L108.36,125.57">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M95.76,121.95L92.14,125.57">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M98.43,134.35L109.89,138.35">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M89.27,142.36L98.24,133.4">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M111.99,153.63L99.39,148.28 89.27,156.3">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M89.47,168.13L99.2,161.64 111.03,166.41">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M86.61,179.01L97.86,174.43 109.7,179.39">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M95.96,182.63L101.87,187.6">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M93.09,194.09L95.19,195.8">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M100.04,199.24L101.94,200.45">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M93.47,206.68L97.48,210.31">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M84.32,213.17L91.57,219.85">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M83.36,214.13L75.15,213.36">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M86.22,228.82L79.73,220.61 70,219.47">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M64.84,225.95L74,226.9 80.11,235.49">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M59.49,231.29L68.27,233.96 74.76,240.83">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M56.25,236.26L64.08,238.54 69.8,245.03">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M62.93,249.42L59.11,243.32 54.15,241.41">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M216.37,204C220.57,211.64,238.89,234.15,248.81,239.12">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M209.5,203.24L213.32,202.86">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M222.1,205.91L219.04,208.96 210.65,210.49">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M214.08,217.36L225.53,216.98">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M235.46,215.45L229.35,222.7 220.19,225.38">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M240.04,220.41L234.5,227.29 224.39,231.86">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M228.97,236.44L237.37,231.48">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M247.29,228.43L241.94,234.92 233.93,240.26">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M245,223.47L238.89,231.86">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="M230.5,209.35L224.77,215.84">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1M250.72,232.63L248.05,237.98 240.8,242.93">
+						<GeometryDrawing.Pen>
+							<Pen Brush="#FFFC1921" DashCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="4" StartLineCap="Round" Thickness="1.02">
+								<Pen.DashStyle>
+									<DashStyle/>
+								</Pen.DashStyle>
+							</Pen>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFC1921" Geometry="F1M127.57,241.52C119.58,255.47 99.4,293.48 92.61,309.16 90.84,313.26 90.42,315.11 92.18,317.18 92.52,317.58 93.07,318.58 93.16,318.94 93.53,320.34 91.93,322.16 91.09,322.71 89.34,323.85 85.58,324.14 78.83,321.05 72.09,317.96 70.39,314.2 70.29,312.12 70.24,311.11 70.77,308.75 72.13,308.22 72.47,308.09 73.6,307.94 74.12,307.98 76.82,308.19 78.3,306.44 80.58,302.59 89.88,286.86 109.75,250.24 116.69,236.12 120.76,227.84 143.3,184.11 154.27,152.44 155.09,150.06 155.85,147.75 156.53,145.51 156.65,145.14 157.24,144.21 157.73,143.49 159.68,140.58 166.22,139.98 172.32,142.85 178.44,145.74 182.81,152.55 181.07,156.99 180.76,157.8 180.12,158.89 179.88,159.21 178.88,160.53 177.84,161.96 176.76,163.46 160.84,185.6 136.65,225.68 127.57,241.52 M76.88,309.24C77,309.57 77.41,309.99 78.54,309.72 78.99,309.61 79.35,309.19 79.92,308.56 80.87,307.51 82.02,305.89 82.35,304.23 82.56,303.51 82.13,303.85 81.96,304.18 81.8,304.51 78.79,308.33 77.21,308.74 76.99,308.8 76.88,308.69 76.88,309.24 M102.83,271.96C100.77,276.06 88.29,300.08 82.68,307.34 82.53,307.53 82.38,307.71 82.24,307.88 82.09,308.09 81.71,308.28 81.57,308.43 81.39,308.62 81.45,308.77 81.34,308.87 81.25,308.98 81.39,309.08 81.32,309.18 81.24,309.32 80.93,309.45 80.83,309.57 80.57,309.84 80.66,310.09 80.45,310.29 80.08,310.65 79.49,310.87 79.49,310.87 78.83,310.99 79.06,311.87 79.61,312.08 79.91,312.2 80.22,312.4 80.53,312.58 80.77,312.73 81.02,312.83 81.27,313.17 81.47,313.44 81.15,313.85 81.13,314.22 81.11,314.51 81.22,314.79 81.01,315 80.72,315.29 80.07,315.44 79.53,315.28 78.89,315.09 78.06,314.6 77.3,314.23 76.35,313.78 75.51,313.47 75.27,313.5 75.05,313.53 74.56,313.66 74.4,313.89 74.3,314.04 74.25,314.24 74.54,314.48 74.66,314.58 75.06,314.81 75.28,314.94 75.63,315.13 75.94,315.46 76.38,315.68 76.55,315.76 76.71,315.62 76.87,315.69 77.08,315.78 77.29,316.1 77.54,316.22 77.83,316.37 78.22,316.61 78.49,316.73 78.67,316.81 78.84,317.15 79.01,317.26 79.11,317.32 79.21,317.17 79.3,317.22 79.62,317.38 79.9,317.43 80.11,317.59 80.46,317.88 80.88,318.18 81.29,318.33 81.96,318.58 82.59,318.33 82.86,317.12 83.28,315.19 83.81,312.98 84.24,311.49 84.32,311.17 84.55,310.51 84.88,309.61 84.94,309.44 84.78,309.25 84.85,309.07 86.14,305.53 88.77,299.28 90.43,295.67 92.64,290.85 102.72,272.62 102.83,272.29 102.94,271.96 103.69,270.46 102.83,271.96 M117.31,243.71C118.99,240.47 169.12,155.09 173.65,147.28 173.65,147.28 174.98,148.04 174.77,149.14 170.21,156.02 141.55,204.13 139.17,208.78 136.79,213.44 119.54,242.92 108.71,263.97 108.71,263.97 152.55,189.26 154.28,186.15 155.99,183.09 174.96,152.45 176.11,150.7 176.11,150.7 177.31,148.73 177.25,148.84 174.26,144.76 168.7,142.48 163.63,142.63 163.21,144.62 144.94,189.33 139.31,200.18 133.95,210.51 119.48,239.73 117.31,243.71L117.31,243.71 M98.68,287.87C101.69,282.23 141.59,210.02 167.16,171.12 167.86,170.04 179.05,153.39 179.11,152.63 179.17,151.77 178.53,150.76 178.2,150.49 177.64,151.38 171.39,161.48 165.95,169.93 142.51,207.94 101.43,280.67 99.05,286.27 98.96,286.48 98.44,287.93 98.35,288.13 98.22,288.4 98.41,288.21 98.2,288.49 97.64,289.24 97.13,290.56 96.64,291.35 96.51,291.54 96.38,291.73 96.25,291.93 96.2,292.01 96.26,292.15 96.22,292.24 96.1,292.51 95.92,292.75 95.82,293.03 95.78,293.13 95.84,293.26 95.79,293.34 95.46,293.89 95.36,294.43 94.96,294.92 94.9,294.99 94.97,295.14 94.93,295.23 94.9,295.29 94.76,295.3 94.74,295.35 94.53,296.1 93.99,296.59 93.65,297.24 93.61,297.33 93.64,297.45 93.64,297.56 93.53,297.53 93.45,297.59 93.43,297.68 93.37,297.95 93.26,298.19 93.18,298.43 93.1,298.64 92.87,298.84 92.83,299.02 92.72,299.43 92.32,299.68 92.34,300.12 92.02,300.23 92.12,300.34 92.11,300.44 92.1,300.55 92.01,300.63 91.95,300.71 91.67,301 91.54,301.41 91.42,301.8 91.32,302.12 91.06,302.36 90.94,302.67 90.92,302.73 90.96,302.82 90.92,302.87 90.82,303.04 91.02,303.2 90.99,303.34 90.94,303.51 90.54,303.79 90.47,303.94 90.43,304.03 90.39,303.99 90.35,304.07 89.93,304.75 90.02,305.42 89.66,306.1 89.6,306.22 89.36,306.42 89.29,306.52 88.8,307.14 88.92,307.94 88.45,308.53 88.53,308.86 88.26,309.1 88.22,309.41 88.21,309.49 88.27,309.55 88.26,309.64 88.23,309.92 88.13,310.16 88.08,310.42 87.89,311.39 87.72,312.3 87.45,313.33 87.25,314.1 86.73,314.44 86.64,315.27 86.61,315.51 86.83,315.52 86.85,315.6 86.87,315.73 86.89,315.85 86.98,315.92 87.07,315.98 87.16,315.9 87.18,315.81 87.39,315.19 87.41,314.74 87.69,314.14 87.81,313.89 87.45,313.56 87.53,313.29 87.78,312.47 88.68,311.76 88.91,310.95 89.3,310.79 88.97,310.37 89.12,310.07 89.17,309.98 89.25,309.97 89.33,309.93 89.48,309.86 89.19,309.65 89.25,309.53 89.45,309.14 89.87,308.78 90.13,308.42 90.3,308.18 90.5,307.95 90.6,307.72 90.78,307.3 91.02,307.03 91.02,306.63 91.03,306.16 91.54,305.77 91.52,305.3 91.52,305.18 91.66,305.07 91.69,304.96 91.82,304.35 91.89,303.77 92.12,303.19 92.2,303 92.14,302.76 92.14,302.54 92.43,302.57 92.1,302.2 92.36,302.21 92.28,301.93 92.43,301.66 92.52,301.46 92.88,300.67 93.17,299.81 93.34,298.9 93.38,298.69 93.56,298.53 93.63,298.33 93.67,298.24 93.6,298.08 93.66,298.02 93.8,297.87 93.88,297.68 94.07,297.54 94.1,297.52 94.06,297.41 94.08,297.35 94.17,297.09 94.49,296.98 94.53,296.68 94.54,296.63 94.69,296.61 94.71,296.56 95,295.81 95.34,295.2 95.53,294.45 95.63,294.02 96.19,293.71 96.16,293.24 96.15,293.21 96.32,293.18 96.33,293.12 96.48,292.63 96.46,292.22 96.76,291.79 96.81,291.71 96.76,291.58 96.79,291.48 96.81,291.39 97.17,291.37 97.18,291.34 97.44,290.94 97.23,290.32 97.38,289.91 97.45,289.68 97.88,289.58 98.01,289.4 98.1,289.28 98.08,289.13 98.19,289.04 98.21,289.01 98.16,288.96 98.16,288.96 98.23,288.81 98.24,288.73 98.36,288.61 98.42,288.55 98.46,288.44 98.43,288.34 98.51,288.41 98.46,288.22 98.54,288.29 98.54,288.23 98.54,288.18 98.54,288.12 M131.26,212.05C134.77,207.23,151.94,171.19,160.52,145.3L159.42,145.53C158.5,148.91,149.62,177.12,131.26,212.05z"/>
+					<GeometryDrawing Brush="#FF0C2D82" Geometry="F1M150.55,94.01C159.24,88 180.24,82.83 199.03,92.96 212.87,100.43 222.89,112.72 225.75,130.66L215.25,136.67C205.33,125.41 196.36,118.73 189.49,115.29 182.62,111.86 166.59,104.99 151.32,104.23L150.55,94.01 M206.24,102.39L201.07,104.75 195.94,101.77 196.53,107.39 192.04,111.27 197.81,112.37 200.03,117.93 203.08,112.87 208.79,112.58 205.07,108.15 206.24,102.39 M220.98,125.17L217.56,125.14 215.51,122.21 214.4,125.43 210.96,126.4 213.83,128.47 213.62,132.07 216.58,130.09 219.77,131.38 218.86,128.02 220.98,125.17 M178.77,92.07L176.3,96.22 171.26,96.63 174.4,100.27 173.14,105.17 177.7,103.14 181.95,105.96 181.64,100.94 185.49,97.96 180.74,96.67 178.77,92.07 M158.72,93.5L157.74,96.54 154.55,97.53 157.11,99.43 157,102.76 159.65,100.79 162.8,101.99 161.86,98.8 163.91,96.32 160.67,96.18 158.72,93.5z"/>
+					<GeometryDrawing Brush="#FF0C2D82" Geometry="F1M247.28,212.26L245.01,212.26 245.01,218.43 243.47,218.43 243.47,212.26 241.21,212.26 241.21,210.92 247.28,210.92 247.28,212.26 M257.55,218.43L256.02,218.43 256.02,212.46 255.98,212.46 253.81,218.43 252.33,218.43 250.22,212.46 250.19,212.46 250.19,218.43 248.65,218.43 248.65,210.92 251.31,210.92 253.06,215.83 253.1,215.83 254.92,210.92 257.55,210.92 257.55,218.43z"/>
+				</DrawingGroup>
+			</DrawingBrush.Drawing>
+		</DrawingBrush>
+	</UserControl.Resources>
+    <Grid>
+    	<Canvas HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="canvas">
+    		<Path Fill="#FFFFFFFF" Stroke="#FFFFFFFF" StrokeThickness="0.59" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M107.84,292.78C105.40,297.59,97.96,311.28,98.35,313.30C98.83,315.81,100.41,317.73,100.33,320.27C100.28,321.84,98.35,325.71,96.84,326.79C95.58,327.70,91.78,334.84,76.76,327.76L74.75,326.70C60.22,318.66,63.77,311.40,63.77,309.85C63.77,307.99,65.77,304.16,67.02,303.20C69.03,301.66,71.51,301.81,73.82,300.73C75.69,299.85,81.33,288.52,83.81,283.72L83.85,283.62C34.36,259.31,0.30,208.42,0.30,149.56C0.30,67.12,67.13,0.29,149.56,0.29C232.00,0.29,298.83,67.12,298.83,149.56C298.83,231.99,232.00,298.82,149.56,298.82C135.02,298.82,120.96,296.74,107.67,292.86L107.84,292.78z"/>
+    		<Path Fill="#FFFC1921" Data="F1M199.40,93.28C201.92,94.85,204.66,96.32,206.75,98.19L230.72,67.67C235.63,71.96,239.54,76.09,243.37,82.11L215.39,106.67C217.65,109.24,220.56,114.34,222.38,117.88L251.13,97.98C251.68,99.05,253.25,105.61,253.00,107.53L224.78,125.77C225.23,127.81,225.55,128.25,225.88,130.95C225.88,130.95,258.35,112.53,258.37,112.30C254.83,77.43,224.51,49.00,188.71,49.00C173.84,49.00,160.06,53.70,148.78,61.68C148.59,61.82,150.65,94.36,150.65,94.36C152.94,92.93,155.78,91.59,156.92,91.21L156.35,61.54C159.12,59.34,162.89,57.53,165.80,56.48L165.13,88.63C169.14,87.68,176.29,87.11,178.58,87.59L184.40,52.56C191.47,51.90,198.52,52.66,204.73,54.67L191.18,89.88C193.86,90.70,196.76,91.93,199.40,93.28"/>
+    		<Path Stroke="#FFFFFFFF" StrokeThickness="2.20" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeDashCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M175.66,188.71C203.68,188.71,226.40,165.99,226.40,137.97C226.40,109.94,203.68,87.23,175.66,87.23C147.64,87.23,124.92,109.94,124.92,137.97C124.92,165.99,147.64,188.71,175.66,188.71z"/>
+    		<Path Fill="#FFFC1921" Data="F1M133.92,202.95C132.51,205.28,121.65,211.74,119.31,208.10C115.40,202.03,127.35,192.39,125.09,189.69C123.73,188.07,118.12,192.29,113.53,197.57C113.53,197.57,110.99,202.45,107.52,208.60L99.36,208.67C98.86,208.29,109.74,192.37,107.63,190.52C104.63,187.90,87.03,216.34,78.76,210.30C78.07,209.79,76.20,207.68,78.69,202.36C74.99,207.25,65.99,211.20,62.20,207.92C54.08,200.88,76.14,177.25,85.04,185.44C85.73,186.08,85.99,186.70,85.93,187.19L87.13,185.31L95.17,185.24C91.52,195.08,83.94,203.99,85.88,205.38C89.27,207.82,108.72,178.00,115.34,184.49C117.40,186.51,117.26,189.16,116.72,190.60C121.41,185.71,131.32,180.99,134.52,184.32C138.42,188.35,126.56,200.28,129.17,201.95C130.65,202.89,135.21,199.41,135.21,199.41 M68.28,202.91C72.64,207.75,85.83,192.44,83.14,188.11C79.57,183.62,64.38,198.58,68.28,202.91z"/>
+    		<Path Fill="#FFFC1921" Data="F1M156.67,193.85C164.06,194.44,172.62,189.95,171.04,186.44C170.11,184.36,164.52,185.18,161.23,186.53L156.67,193.85 M180.76,200.02C172.67,207.36,163.97,210.11,161.10,207.92C156.32,204.26,160.68,199.52,158.25,197.47C157.58,196.91,156.47,196.77,154.66,196.90L164.06,182.31C169.10,179.73,177.34,178.34,178.73,183.06C180.66,189.65,171.45,195.36,165.07,196.42C169.93,197.31,165.12,202.71,170.10,203.36C172.31,203.66,178.76,199.04,182.14,194.38"/>
+    		<Path Fill="#FFFC1921" Data="F1M214.47,197.39C201.88,206.43,185.29,209.26,181.77,201.55C175.95,188.84,208.20,172.90,212.02,182.64C214.72,189.55,201.88,195.74,191.30,195.84C190.86,195.84,191.01,195.73,190.97,195.84C190.05,198.52,191.36,201.46,196.32,201.42C201.28,201.37,208.64,199.32,215.64,193.08 M191.72,193.30C198.11,192.47,204.51,187.14,203.44,184.70C201.93,181.29,193.10,187.44,191.72,193.30z"/>
+    		<Path Fill="#FFFC1921" Data="F1M259.14,187.49C254.99,191.72,249.04,194.73,248.29,195.31C236.55,204.35,219.14,207.68,215.27,200.14C208.68,187.32,241.54,172.61,244.09,181.57C245.94,188.09,234.50,193.67,224.80,194.42C224.36,194.46,224.51,194.31,224.47,194.43C223.55,197.11,224.86,200.05,229.82,200.00C234.78,199.95,240.15,197.61,247.50,193.11C249.14,192.10,256.05,188.29,259.43,183.63 M225.11,191.67C232.38,191.38,238.92,185.57,237.04,182.96C234.71,179.69,225.62,187.14,225.11,191.67z"/>
+    		<Path Fill="#FFFC1921" Data="F1M253.88,191.07C254.42,196.74,248.80,196.90,248.52,196.63C247.66,197.58,248.32,201.67,252.65,201.88C259.85,202.24,259.75,192.78,258.79,189.26C258.14,186.85,258.62,184.21,259.00,181.90C259.95,176.10,267.46,170.06,270.13,171.95C271.94,173.25,270.94,177.57,266.03,181.81C265.11,182.70,264.51,182.85,265.84,185.59C267.29,188.57,269.76,195.73,265.72,201.19C262.57,205.47,257.16,206.04,252.67,205.28C249.80,204.79,246.59,202.89,245.26,200.73C239.50,191.42,251.40,185.03,253.88,191.07z"/>
+    		<Path Fill="#FF0C2D82" Data="F1M176.80,163.38C177.88,161.88,178.90,160.48,179.89,159.15C180.13,158.84,180.77,157.75,181.09,156.94C182.82,152.49,178.46,145.69,172.33,142.80C166.23,139.92,159.70,140.53,157.74,143.43C157.25,144.15,156.66,145.08,156.55,145.46C155.87,147.68,155.10,149.88,154.27,152.27C144.61,145.81,138.93,138.88,141.56,133.87C146.43,124.58,161.65,126.15,177.54,133.95C193.43,141.76,204.18,153.60,199.69,162.13C197.03,167.20,187.92,167.09,176.80,163.38z"/>
+    		<Path Fill="#FF0C2D82" Data="F1M195.86,182.29C195.04,182.59,193.03,183.67,191.47,184.66C188.32,181.07,177.24,173.40,171.32,171.35C171.23,171.32,172.82,169.23,172.82,169.23C178.93,171.71,193.47,180.15,195.76,182.25"/>
+    		<Canvas>
+    			<Path Fill="#FF0C2D82" Data="F1M224.68,183.47C226.00,182.53,229.59,181.07,229.69,180.94C229.81,180.45,229.88,179.48,229.88,179.48C233.69,161.54,225.91,146.94,219.81,141.21C213.85,135.62,216.69,139.80,218.66,142.36C220.07,144.17,220.74,145.24,221.34,146.36C224.44,152.25,222.97,151.52,218.86,147.32C210.74,139.03,196.62,128.52,183.65,122.03C165.93,113.17,144.23,108.96,132.21,109.34C137.17,107.05,139.90,106.80,145.00,106.29C149.52,105.83,147.75,104.93,145.00,105.14C135.34,105.88,113.82,106.22,110.46,123.08C107.60,137.40,119.23,149.61,130.49,154.00C140.28,157.81,150.63,162.36,150.63,162.36L151.68,159.15C145.95,156.09,135.97,152.81,130.69,150.75C123.81,148.08,111.51,138.62,113.13,125.75C115.80,104.40,155.93,111.43,182.59,124.80C194.14,130.59,209.61,141.83,217.21,149.16C225.92,157.56,227.44,160.38,228.01,169.27C228.04,174.70,226.53,179.60,224.68,183.47"/>
+    			<Canvas Canvas.Left="-13616.86" Canvas.Top="-13294.92">
+    				<TextBlock Text=" " FontFamily="Arial" FontSize="10" Foreground="#FF000000" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="0" Canvas.Top="-9.22"/>
+    			</Canvas>
+    		</Canvas>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M228.20,62.01C230.88,58.57,237.71,49.78,240.23,47.89"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M228.97,46.36L234.31,53.99L244.23,57.43"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M223.24,51.70L230.50,58.96L238.51,62.77"/>
+    		<Path Fill="#FFFC1921" Data="F1M292.10,149.04C292.10,70.22,228.20,6.32,149.39,6.32C79.16,6.32,20.79,57.04,8.89,123.84L22.73,109.17C39.90,55.70,90.03,17.01,149.19,17.01C222.53,17.01,281.98,76.46,281.98,149.80L282.06,149.90C281.20,174.71,276.34,185.35,267.45,191.76L266.66,198.27C270.56,195.27,282.38,182.77,289.71,167.67C291.70,163.56,292.25,152.95,292.19,149.28L292.10,149.04z"/>
+    		<Path Fill="#FFFC1921" Data="F1M274.87,193.73C256.84,245.68,207.47,281.04,149.39,281.55C80.02,282.15,17.19,223.57,17.19,150.23L17.19,150.23C16.15,135.41,20.44,125.91,23.94,119.48C27.53,112.85,35.19,104.12,41.98,105.45C52.50,107.51,45.74,121.25,36.80,136.83C28.07,152.05,17.49,168.05,26.00,177.25C32.89,184.70,47.00,183.01,55.63,174.44L29.01,224.42L40.83,224.51L92.24,127.47L80.33,127.80L59.31,166.91C52.54,173.26,41.53,179.08,35.24,174.74C22.75,166.12,71.65,119.42,53.66,104.24C39.29,92.11,23.68,110.21,18.73,118.80C14.67,125.83,7.03,136.66,6.85,149.99L6.86,149.42C6.86,228.23,70.76,292.13,149.57,292.13C216.78,292.13,273.13,245.68,288.28,183.14C288.86,180.84,289.47,178.04,289.47,178.04C285.46,184.35,274.87,193.73,274.87,193.73z"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M73.23,76.13L85.26,74.41"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M52.63,55.16C81.30,78.06,99.67,113.31,99.67,152.86C99.67,163.56,98.45,172.69,95.95,182.63"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M84.81,212.41C78.44,224.22,70.19,234.84,60.39,243.84C55.81,248.04,57.21,245.62,57.21,245.62"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M66.38,54.38L56.07,58.20L52.63,68.70"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M62.17,63.17L71.34,59.73"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M65.23,66.60L74.77,63.54"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M69.05,71.18L81.26,69.27"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M79.73,84.35L92.90,83.20"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M76.49,101.52L84.50,93.13L97.86,92.75"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M80.11,109.73L88.51,101.52L101.30,102.29"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M57.02,73.09L61.22,63.17"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M61.98,78.05L66.18,67.75"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M64.66,82.25L70.00,72.14"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M68.28,87.02L74.39,77.86"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M71.91,92.56L78.78,85.11"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M83.74,120.61L92.52,111.83L106.26,112.97"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M95.96,122.33L108.36,125.57"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M95.76,121.95L92.14,125.57"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M98.43,134.35L109.89,138.35"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M89.27,142.36L98.24,133.40"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M111.99,153.63L99.39,148.28L89.27,156.30"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M89.47,168.13L99.20,161.64L111.03,166.41"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M86.61,179.01L97.86,174.43L109.70,179.39"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M95.96,182.63L101.87,187.60"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M93.09,194.09L95.19,195.80"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M100.04,199.24L101.94,200.45"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M93.47,206.68L97.48,210.31"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M84.32,213.17L91.57,219.85"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M83.36,214.13L75.15,213.36"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M86.22,228.82L79.73,220.61L70.00,219.47"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M64.84,225.95L74.00,226.90L80.11,235.49"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M59.49,231.29L68.27,233.96L74.76,240.83"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M56.25,236.26L64.08,238.54L69.80,245.03"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M62.93,249.42L59.11,243.32L54.15,241.41"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M216.37,204.00C220.57,211.64,238.89,234.15,248.81,239.12"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M209.50,203.24L213.32,202.86"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M222.10,205.91L219.04,208.96L210.65,210.49"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M214.08,217.36L225.53,216.98"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M235.46,215.45L229.35,222.70L220.19,225.38"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M240.04,220.41L234.50,227.29L224.39,231.86"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M228.97,236.44L237.37,231.48"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M247.29,228.43L241.94,234.92L233.93,240.26"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M245.00,223.47L238.89,231.86"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="M230.50,209.35L224.77,215.84"/>
+    		<Path Stroke="#FFFC1921" StrokeThickness="1.02" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="4" StrokeDashOffset="0" Data="F1M250.72,232.63L248.05,237.98L240.80,242.93"/>
+    		<Path Fill="#FFFC1921" Data="F1M127.57,241.52C119.58,255.47,99.40,293.48,92.61,309.16C90.84,313.26,90.42,315.11,92.18,317.18C92.52,317.58,93.07,318.58,93.16,318.94C93.53,320.34,91.93,322.16,91.09,322.71C89.34,323.85,85.58,324.14,78.83,321.05C72.09,317.96,70.39,314.20,70.29,312.12C70.24,311.11,70.77,308.75,72.13,308.22C72.47,308.09,73.60,307.94,74.12,307.98C76.82,308.19,78.30,306.44,80.58,302.59C89.88,286.86,109.75,250.24,116.69,236.12C120.76,227.84,143.30,184.11,154.27,152.44C155.09,150.06,155.85,147.75,156.53,145.51C156.65,145.14,157.24,144.21,157.73,143.49C159.68,140.58,166.22,139.98,172.32,142.85C178.44,145.74,182.81,152.55,181.07,156.99C180.76,157.80,180.12,158.89,179.88,159.21C178.88,160.53,177.84,161.96,176.76,163.46C160.84,185.60,136.65,225.68,127.57,241.52 M76.88,309.24C77.00,309.57,77.41,309.99,78.54,309.72C78.99,309.61,79.35,309.19,79.92,308.56C80.87,307.51,82.02,305.89,82.35,304.23C82.56,303.51,82.13,303.85,81.96,304.18C81.80,304.51,78.79,308.33,77.21,308.74C76.99,308.80,76.88,308.69,76.88,309.24 M102.83,271.96C100.77,276.06,88.29,300.08,82.68,307.34C82.53,307.53,82.38,307.71,82.24,307.88C82.09,308.09,81.71,308.28,81.57,308.43C81.39,308.62,81.45,308.77,81.34,308.87C81.25,308.98,81.39,309.08,81.32,309.18C81.24,309.32,80.93,309.45,80.83,309.57C80.57,309.84,80.66,310.09,80.45,310.29C80.08,310.65,79.49,310.87,79.49,310.87C78.83,310.99,79.06,311.87,79.61,312.08C79.91,312.20,80.22,312.40,80.53,312.58C80.77,312.73,81.02,312.83,81.27,313.17C81.47,313.44,81.15,313.85,81.13,314.22C81.11,314.51,81.22,314.79,81.01,315.00C80.72,315.29,80.07,315.44,79.53,315.28C78.89,315.09,78.06,314.60,77.30,314.23C76.35,313.78,75.51,313.47,75.27,313.50C75.05,313.53,74.56,313.66,74.40,313.89C74.30,314.04,74.25,314.24,74.54,314.48C74.66,314.58,75.06,314.81,75.28,314.94C75.63,315.13,75.94,315.46,76.38,315.68C76.55,315.76,76.71,315.62,76.87,315.69C77.08,315.78,77.29,316.10,77.54,316.22C77.83,316.37,78.22,316.61,78.49,316.73C78.67,316.81,78.84,317.15,79.01,317.26C79.11,317.32,79.21,317.17,79.30,317.22C79.62,317.38,79.90,317.43,80.11,317.59C80.46,317.88,80.88,318.18,81.29,318.33C81.96,318.58,82.59,318.33,82.86,317.12C83.28,315.19,83.81,312.98,84.24,311.49C84.32,311.17,84.55,310.51,84.88,309.61C84.94,309.44,84.78,309.25,84.85,309.07C86.14,305.53,88.77,299.28,90.43,295.67C92.64,290.85,102.72,272.62,102.83,272.29C102.94,271.96,103.69,270.46,102.83,271.96 M117.31,243.71C118.99,240.47,169.12,155.09,173.65,147.28C173.65,147.28,174.98,148.04,174.77,149.14C170.21,156.02,141.55,204.13,139.17,208.78C136.79,213.44,119.54,242.92,108.71,263.97C108.71,263.97,152.55,189.26,154.28,186.15C155.99,183.09,174.96,152.45,176.11,150.70C176.11,150.70,177.31,148.73,177.25,148.84C174.26,144.76,168.70,142.48,163.63,142.63C163.21,144.62,144.94,189.33,139.31,200.18C133.95,210.51,119.48,239.73,117.31,243.71L117.31,243.71 M98.68,287.87C101.69,282.23,141.59,210.02,167.16,171.12C167.86,170.04,179.05,153.39,179.11,152.63C179.17,151.77,178.53,150.76,178.20,150.49C177.64,151.38,171.39,161.48,165.95,169.93C142.51,207.94,101.43,280.67,99.05,286.27C98.96,286.48,98.44,287.93,98.35,288.13C98.22,288.40,98.41,288.21,98.20,288.49C97.64,289.24,97.13,290.56,96.64,291.35C96.51,291.54,96.38,291.73,96.25,291.93C96.20,292.01,96.26,292.15,96.22,292.24C96.10,292.51,95.92,292.75,95.82,293.03C95.78,293.13,95.84,293.26,95.79,293.34C95.46,293.89,95.36,294.43,94.96,294.92C94.90,294.99,94.97,295.14,94.93,295.23C94.90,295.29,94.76,295.30,94.74,295.35C94.53,296.10,93.99,296.59,93.65,297.24C93.61,297.33,93.64,297.45,93.64,297.56C93.53,297.53,93.45,297.59,93.43,297.68C93.37,297.95,93.26,298.19,93.18,298.43C93.10,298.64,92.87,298.84,92.83,299.02C92.72,299.43,92.32,299.68,92.34,300.12C92.02,300.23,92.12,300.34,92.11,300.44C92.10,300.55,92.01,300.63,91.95,300.71C91.67,301.00,91.54,301.41,91.42,301.80C91.32,302.12,91.06,302.36,90.94,302.67C90.92,302.73,90.96,302.82,90.92,302.87C90.82,303.04,91.02,303.20,90.99,303.34C90.94,303.51,90.54,303.79,90.47,303.94C90.43,304.03,90.39,303.99,90.35,304.07C89.93,304.75,90.02,305.42,89.66,306.10C89.60,306.22,89.36,306.42,89.29,306.52C88.80,307.14,88.92,307.94,88.45,308.53C88.53,308.86,88.26,309.10,88.22,309.41C88.21,309.49,88.27,309.55,88.26,309.64C88.23,309.92,88.13,310.16,88.08,310.42C87.89,311.39,87.72,312.30,87.45,313.33C87.25,314.10,86.73,314.44,86.64,315.27C86.61,315.51,86.83,315.52,86.85,315.60C86.87,315.73,86.89,315.85,86.98,315.92C87.07,315.98,87.16,315.90,87.18,315.81C87.39,315.19,87.41,314.74,87.69,314.14C87.81,313.89,87.45,313.56,87.53,313.29C87.78,312.47,88.68,311.76,88.91,310.95C89.30,310.79,88.97,310.37,89.12,310.07C89.17,309.98,89.25,309.97,89.33,309.93C89.48,309.86,89.19,309.65,89.25,309.53C89.45,309.14,89.87,308.78,90.13,308.42C90.30,308.18,90.50,307.95,90.60,307.72C90.78,307.30,91.02,307.03,91.02,306.63C91.03,306.16,91.54,305.77,91.52,305.30C91.52,305.18,91.66,305.07,91.69,304.96C91.82,304.35,91.89,303.77,92.12,303.19C92.20,303.00,92.14,302.76,92.14,302.54C92.43,302.57,92.10,302.20,92.36,302.21C92.28,301.93,92.43,301.66,92.52,301.46C92.88,300.67,93.17,299.81,93.34,298.90C93.38,298.69,93.56,298.53,93.63,298.33C93.67,298.24,93.60,298.08,93.66,298.02C93.80,297.87,93.88,297.68,94.07,297.54C94.10,297.52,94.06,297.41,94.08,297.35C94.17,297.09,94.49,296.98,94.53,296.68C94.54,296.63,94.69,296.61,94.71,296.56C95.00,295.81,95.34,295.20,95.53,294.45C95.63,294.02,96.19,293.71,96.16,293.24C96.15,293.21,96.32,293.18,96.33,293.12C96.48,292.63,96.46,292.22,96.76,291.79C96.81,291.71,96.76,291.58,96.79,291.48C96.81,291.39,97.17,291.37,97.18,291.34C97.44,290.94,97.23,290.32,97.38,289.91C97.45,289.68,97.88,289.58,98.01,289.40C98.10,289.28,98.08,289.13,98.19,289.04C98.21,289.01,98.16,288.96,98.16,288.96C98.23,288.81,98.24,288.73,98.36,288.61C98.42,288.55,98.46,288.44,98.43,288.34C98.51,288.41,98.46,288.22,98.54,288.29C98.54,288.23,98.54,288.18,98.54,288.12 M131.26,212.05C134.77,207.23,151.94,171.19,160.52,145.30L159.42,145.53C158.50,148.91,149.62,177.12,131.26,212.05z"/>
+    		<Path Fill="#FF0C2D82" Data="F1M150.55,94.01C159.24,88.00,180.24,82.83,199.03,92.96C212.87,100.43,222.89,112.72,225.75,130.66L215.25,136.67C205.33,125.41,196.36,118.73,189.49,115.29C182.62,111.86,166.59,104.99,151.32,104.23L150.55,94.01 M206.24,102.39L201.07,104.75L195.94,101.77L196.53,107.39L192.04,111.27L197.81,112.37L200.03,117.93L203.08,112.87L208.79,112.58L205.07,108.15L206.24,102.39 M220.98,125.17L217.56,125.14L215.51,122.21L214.40,125.43L210.96,126.40L213.83,128.47L213.62,132.07L216.58,130.09L219.77,131.38L218.86,128.02L220.98,125.17 M178.77,92.07L176.30,96.22L171.26,96.63L174.40,100.27L173.14,105.17L177.70,103.14L181.95,105.96L181.64,100.94L185.49,97.96L180.74,96.67L178.77,92.07 M158.72,93.50L157.74,96.54L154.55,97.53L157.11,99.43L157.00,102.76L159.65,100.79L162.80,101.99L161.86,98.80L163.91,96.32L160.67,96.18L158.72,93.50z"/>
+    		<Path Fill="#FF0C2D82" Data="F1M247.28,212.26L245.01,212.26L245.01,218.43L243.47,218.43L243.47,212.26L241.21,212.26L241.21,210.92L247.28,210.92L247.28,212.26 M257.55,218.43L256.02,218.43L256.02,212.46L255.98,212.46L253.81,218.43L252.33,218.43L250.22,212.46L250.19,212.46L250.19,218.43L248.65,218.43L248.65,210.92L251.31,210.92L253.06,215.83L253.10,215.83L254.92,210.92L257.55,210.92L257.55,218.43z"/>
+    	</Canvas>
+    	<Rectangle Fill="{DynamicResource NYY}" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeStartLineCap="Flat" StrokeThickness="0.59" HorizontalAlignment="Right" Margin="0,0,-92,-196" VerticalAlignment="Bottom" Width="160" Height="184"/>
+            
+    </Grid>
+</UserControl>

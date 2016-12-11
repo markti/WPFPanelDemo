@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F82581D0-BC64-42B4-A2BF-7EB5D34AC022}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLB</RootNamespace>
+    <AssemblyName>MLB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Surface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Surface.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\CapControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TeamControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos\Indians.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos\Mariners.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos\Orioles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos\RedSox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos\Rockies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos\Yankees.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\CapControl.xaml.cs">
+      <DependentUpon>CapControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TeamControl.xaml.cs">
+      <DependentUpon>TeamControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\StringToColorConverter.cs" />
+    <Compile Include="Logos\Indians.xaml.cs">
+      <DependentUpon>Indians.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logos\Mariners.xaml.cs">
+      <DependentUpon>Mariners.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logos\Orioles.xaml.cs">
+      <DependentUpon>Orioles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logos\RedSox.xaml.cs">
+      <DependentUpon>RedSox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logos\Rockies.xaml.cs">
+      <DependentUpon>Rockies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logos\Yankees.xaml.cs">
+      <DependentUpon>Yankees.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Caps\SDP.png" />
+    <Resource Include="Resources\Images\Caps\CLE.png" />
+    <Resource Include="Resources\Images\Caps\CWS.png" />
+    <Resource Include="Resources\Images\Caps\DET.png" />
+    <Resource Include="Resources\Images\Caps\KCR.png" />
+    <Resource Include="Resources\Images\Caps\MIN.png" />
+    <Resource Include="Resources\Images\Caps\BAL.png" />
+    <Resource Include="Resources\Images\Caps\TBR.png" />
+    <Resource Include="Resources\Images\Caps\TOR.png" />
+    <Resource Include="Resources\Images\Caps\LAA.png" />
+    <Resource Include="Resources\Images\Caps\OAK.png" />
+    <Resource Include="Resources\Images\Caps\SEA.png" />
+    <Resource Include="Resources\Images\Caps\TEX.png" />
+    <Resource Include="Resources\Images\Caps\BOS.png" />
+    <Resource Include="Resources\Images\Caps\LAD.png" />
+    <Resource Include="Resources\Images\Caps\CHC.png" />
+    <Resource Include="Resources\Images\Caps\CIN.png" />
+    <Resource Include="Resources\Images\Caps\HOU.png" />
+    <Resource Include="Resources\Images\Caps\MIL.png" />
+    <Resource Include="Resources\Images\Caps\PIT.png" />
+    <Resource Include="Resources\Images\Caps\STL.png" />
+    <Resource Include="Resources\Images\Caps\ATL.png" />
+    <Resource Include="Resources\Images\Caps\FLA.png" />
+    <Resource Include="Resources\Images\Caps\NYM.png" />
+    <Resource Include="Resources\Images\Caps\PHI.png" />
+    <Resource Include="Resources\Images\Caps\WAS.png" />
+    <Resource Include="Resources\Images\Caps\ARI.png" />
+    <Resource Include="Resources\Images\Caps\COL.png" />
+    <Resource Include="Resources\Images\Caps\SFG.png" />
+    <Resource Include="Resources\Images\Caps\NYY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunPanels\FunPanels.csproj">
+      <Project>{D68FC963-7F50-4533-96AF-BDCAC9ADD08D}</Project>
+      <Name>FunPanels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Logos\CWS.png" />
+    <Resource Include="Resources\Images\Logos\DET.png" />
+    <Resource Include="Resources\Images\Logos\KCR.png" />
+    <Resource Include="Resources\Images\Logos\MIN.png" />
+    <Resource Include="Resources\Images\Logos\TBR.png" />
+    <Resource Include="Resources\Images\Logos\TOR.png" />
+    <Resource Include="Resources\Images\Logos\LAA.png" />
+    <Resource Include="Resources\Images\Logos\OAK.png" />
+    <Resource Include="Resources\Images\Logos\TEX.png" />
+    <Resource Include="Resources\Images\Logos\ATL.png" />
+    <Resource Include="Resources\Images\Logos\ARI.png" />
+    <Resource Include="Resources\Images\Logos\CHC.png" />
+    <Resource Include="Resources\Images\Logos\CIN.png" />
+    <Resource Include="Resources\Images\Logos\HOU.png" />
+    <Resource Include="Resources\Images\Logos\MIL.png" />
+    <Resource Include="Resources\Images\Logos\PIT.png" />
+    <Resource Include="Resources\Images\Logos\STL.png" />
+    <Resource Include="Resources\Images\Logos\FLA.png" />
+    <Resource Include="Resources\Images\Logos\NYM.png" />
+    <Resource Include="Resources\Images\Logos\PHI.png" />
+    <Resource Include="Resources\Images\Logos\WAS.png" />
+    <Resource Include="Resources\Images\Logos\LAD.png" />
+    <Resource Include="Resources\Images\Logos\SDP.png" />
+    <Resource Include="Resources\Images\Logos\SFG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Helmet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Games.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Menu\Sick.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
